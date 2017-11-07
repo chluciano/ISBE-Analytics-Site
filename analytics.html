@@ -1,0 +1,245 @@
+<html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<head>
+	<title> NU Analytics</title>
+	<style>
+	header {
+		text-align: center;
+		background: url("http://dash.ga.co/assets/jeff-bg.png");
+      	background-size: cover;
+      	color: white;
+      	-webkit-transition: background-image 0.2s ease-in-out;
+		transition: background-image 0.2s ease-in-out;
+		}
+	a {
+		color: white;
+		background: transparent;
+    	border: 0px;
+    	outline: none;
+    	display:
+    	cursor: pointer
+		text-align: center;
+		overflow: hidden;
+		white-space: nowrap;
+		font-family: sans-serif;
+		font-weight: lighter;
+		transition-duration: 0.1s;
+		font-size: 10px;
+		letter-spacing: 3px;
+	}
+	a:link {
+		color: white;
+		text-decoration: none;
+	}
+	a:visited {
+		color: white;
+		text-decoration: none;
+	}
+	a:hover {
+		color: rgb(193, 190, 185);
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+		color: rgb(193, 190, 185);
+	}
+	ul {
+      padding: 30px 0px 50px 0px;
+    }
+    li {
+      display: inline;
+      padding: 10px 0px 10px 0px;
+    }
+    h1 {
+    	font-size: 75px;
+    	margin: 10px 0px 270px 0px;
+    	font-weight: lighter;
+    	font-family: sans-serif;
+    	letter-spacing: 7px;
+    }
+    h3 {
+    	margin: 160px 0px 0px 0px;
+    }
+    article {
+    	text-align: center;
+    	font-size: 50px;
+    	padding: 10px;
+    	margin: 50px 0px 0px 0px;
+    }
+    .isbe {
+    	font-size: 22px;
+    	font-family: sans-serif;
+    	letter-spacing: 3px;
+    	width: 120px;
+    	margin: 0px;
+    	height: 100px;
+    	font-weight: 500;
+    }
+    .isbe:link {
+    	color: white;
+    	text-decoration: none;
+    }
+    .isbe:visited {
+    	color: white;
+    	text-decoration: none;
+    }
+    .isbe:hover {
+    	color: rgb(193, 190, 185);
+    	text-decoration: none;
+    }
+    .apply {
+    	border: 2px solid white;
+    	padding: 12px 14px 12px 14px;
+    	font-size: 10px;
+    	letter-spacing: 3px;
+    	height: 70px;
+    	width: 100px;
+    	transition-duration: 0.1s;
+    }
+    .apply:link {
+    	color: white;
+    	text-decoration: none;
+    }
+    .apply:visited {
+    	color: white;
+    	text-decoration: none;
+    }
+    .apply:hover {
+    	color: black;
+    	text-decoration: none;
+    	background: white;
+    }
+    .home {
+    	font-size: 10px;
+    	letter-spacing: 3px;
+    	height: 70px;
+    	width: 100px;
+    }
+    .home:link {
+    	color: white;
+    	text-decoration: none;
+    }
+    .home:visited {
+    	color: white;
+    	text-decoration: none;
+    }
+    .home:hover {
+    	color: rgb(193, 190, 185);
+    	text-decoration: none;
+    }
+    .about {
+    	font-size: 10px;
+    	letter-spacing: 3px;
+    	height: 70px;
+    	width: 100px;
+    }
+   	.about:link {
+    	color: white;
+    	text-decoration: none;
+    }
+    .about:visited {
+    	color: white;
+    	text-decoration: none;
+    }
+    .about:hover {
+    	color: rgb(193, 190, 185);
+    	text-decoration: none;
+    }
+    .work {
+    	font-size: 10px;
+    	letter-spacing: 3px;
+    	height: 70px;
+    	width: 100px;
+    }
+    .work:link {
+    	color: white;
+    	text-decoration: none;
+    }
+    .work:visited {
+    	color: white;
+    	text-decoration: none;
+    }
+    .work:hover {
+    	color: rgb(193, 190, 185);
+    	text-decoration: none;
+    }
+
+      @media (max-width: 1000px) {
+    	.apply {
+    		border: none;
+    	}
+    	.apply:hover {
+    		color: rgb(193, 190, 185);
+    		text-decoration: none;
+    		background: none;
+    	}
+    	li {
+    		line-height: 20px;
+    	}
+    	h1 {
+    		margin-top: 0px;
+    	}
+    	h3 {
+    		margin-top: 100px;
+    		margin-bottom: 40px;
+    	}
+    }
+
+</style>
+</head>
+
+
+<body>
+<header><ul>
+ 	<div class="container-fluid">
+ 		<div class="col-md-1">
+ 			<a href="https://www.nuisbe.org/about"><span class="isbe"><role="button">NU ISBE</role="button"></span></a></div>
+ 		<div class="col-md-1"></div>
+  		<div class="col-md-1"></div>
+  		<div class="col-md-1"></div>
+  		<div class="col-md-1"></div>
+  		<div class="col-md-1"></div>
+  		<div class="col-md-1"></div>
+  		<div class="col-md-1"></div>
+  		<div class="col-md-1">
+  			<a href="https://www.nuisbe.org/about"><span class="home"><role="button">HOME</role="button"></span></a></div>
+  		<div class="col-md-1">
+  			<a href="file:///Users/christinegarver/Desktop/analytics.html"><span class="about"><role="button">ABOUT</role="button"></span></a></div>
+  		<div class="col-md-1">
+  			<a href="https://www.nuisbe.org/about"><span class="work"><role="button">WORK<br> WITH US</role="button"></span></a></div>
+  		<div class="col-md-1">
+  			<a href="https://www.nuisbe.org/apply"><span class="apply"><role="button">APPLY</role="button"></span></a></div>
+  		</div>
+  	</div>
+  </div>
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-md-12">
+  			<h3 class="lead text-center">slogan</h3></div>
+  		</div>
+  	</div>
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-md-12">
+  			<h1 class="text-center">ANALYTICS</h1></div>
+  		</div>
+  	</div>
+  </ul></header>
+ <article>
+ 	<div class="container-fluid">
+ 		<div class="col-md-12 lead">ISBE Analytics is a quantitative consulting group, part of the largest student-run business organization at Northwestern University - Institute for Student Business Education (ISBE). Analytics delivers value to clients both within and outside of the Northwestern community. Past clients have included startups, student organizations, nonprofits, and corporate partners.
+</div>
+ 	</div>
+ </article>
+ 
+ <script>
+ </script>
+</body>
