@@ -76,15 +76,55 @@ li a:hover:not(.active) {
     color:#fff;
     
 }
-hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-style: inset;
-    border-width: 1px;
-} 
+h2{
+    text-align: right;
+}
+[class*='col-'] {
+  float: left;
+}
+.col-1-4 {
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.col-1-8 {
+  width: 12.5%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.col-1-16 {
+  width: 6.25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.col-3-16 {
+  width: 18.75%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/**
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[class*='col-'] {
+  padding-right: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}**/
 
 </style>
 </head>
@@ -92,10 +132,6 @@ hr {
 <body>
 
 <!--BANNER-->
-<!--
-<div class="col-sm-12" style="background-image: url('testbanner.png') width=100px">
-		<h1 class="text_over_image">Our Projects</h1>
- </div>-->
 
 <div class = "wrap">
 	<img src="testbanner.png" width="100%">
@@ -115,20 +151,7 @@ hr {
 	</ul>
 </div>
 </div>
-<!--
-<img src="testbanner.png" class="img-responsive" width="100%"> 
-<div class="top-left">
-	<h1> NU ISBE ANALYTICS </h1>
-</div>
-<div class="top-right">
-	<ul>
-		<li><a href="#about">Apply</a></li>
-	  	<li><a class ="active" href="#contact">Work</a></li>
-	  	<li><a href="#news">About</a></li>
-	  	<li><a href="#home">Home</a></li>
-	</ul>
-</div>
--->
+
 
 <!--MISSION STATEMENT-->
 <div class = "container-fluid">	
@@ -144,37 +167,74 @@ hr {
 </div>
 <div class="col-sm-1"></div>
 </div>
-<hr>
 
-<!--Project 1-->
-<div class="container-fluid">
-<div class="col-sm-1"></div> 
-<div class="col-sm-3">
-	<img src="img1.png" class="img-responsive" width="100%"> 
-</div>
-<div class="col-sm-7">
-	<p>
-		Past clients include have included Mayfest, Chicago Field Studies, AlumTalks, The Starter League, The Daily Northwestern, Northwestern Department of Economics, STITCH Fashion Magazine.
-	</p>
-</div>
-<div class="col-sm-1"></div> 
-</div>
-<hr>
 
-<!--Project 2-->
+<!--PICTURES-->
 <div class="container-fluid">
-<div class="col-sm-1"></div> 
-<div class="col-sm-3">
-	<img src="img1.png" class="img-responsive" width="100%"> 
+<div class="col-3-16"><p></p> </div>
+<div class="col-1-4"> <!--Project 1-->
+	<img src="accenture.png" class="img-responsive" width="100%"> 
 </div>
-<div class="col-sm-7">
-	<p>
-		Past clients include have included Mayfest, Chicago Field Studies, AlumTalks, The Starter League, The Daily Northwestern, Northwestern Department of Economics, STITCH Fashion Magazine.
-	</p>
+<div class="col-1-4"><!--Project 2-->
+    <img src="callidushealth.png" class="img-responsive" width="100%"> 
 </div>
-<div class="col-sm-1"></div> 
+<div class="col-1-4"><!--Project 3-->
+    <img src="cityofevanston.jpg" class="img-responsive" width="100%"> 
 </div>
+<div class="col-1-16"> <p></p></div>
 </div>
+<!--Descriptions of problems--> 
+<div class="container-fluid">
+<div class="col-3-16">
+    <h2>
+        Problem
+    </h2>
+</div>
+<div class="col-1-4"> <!--Project 1-->
+    <p>
+        Project 1 was great!Project 1 was great! Project 1 was great! Project 1 was great! Project 1 was great! Project 1 was great! Project 1 was great!
+    </p>
+</div>
+<div class="col-1-4"><!--Project 2-->
+    <p>
+        Project 2 was great! Project 2 was great!Project 2 was great!Project 2 was great!Project 2 was great!Project 2 was great!Project 2 was great!
+    </p>
+</div>
+<div class="col-1-4"><!--Project 3-->
+    <p>
+        Project 3 was great!Project 3 was great!Project 3 was great!Project 3 was great!Project 3 was great!Project 3 was great!Project 3 was great!
+    </p>
+</div>
+<div class="col-1-16"> <p></p></div>
+</div>
+
+<!--Descriptions of problems--> 
+<div class="container-fluid">
+<div class="col-3-16">
+    <h2>
+        How We Tackled It
+    </h2>
+</div>
+<div class="col-1-4"> <!--Project 1-->
+    <p>
+        Solution 1!Solution 1!Solution 1!Solution 1!Solution 1!Solution 1!Solution 1!Solution 1!Solution 1!Solution 1!Solution 1!Solution 1!
+    </p>
+</div>
+<div class="col-1-4"><!--Project 2-->
+    <p>
+        Solution 2!Solution 2!Solution 2!Solution 2!Solution 2!Solution 2!Solution 2!Solution 2!Solution 2!Solution 2!Solution 2!Solution 2!Solution 2!
+    </p>
+</div>
+<div class="col-1-4"><!--Project 3-->
+    <p>
+        Solution 3!Solution 3!Solution 3!Solution 3!Solution 3!Solution 3!Solution 3!Solution 3!Solution 3!Solution 3!Solution 3!Solution 3!
+    </p>
+</div>
+<div class="col-1-16"> <p> </p></div>
+</div>
+
+
+
 
 </body>
 </html>
