@@ -13,6 +13,9 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	<style>
 		header {
 		  width: 100%;
@@ -47,38 +50,14 @@
 		  text-align: center; 
 		}
 		
-		.image {
-		  opacity: 1;
-		  width: 100%;
-		  height: auto;
-		  transition: .5s ease;
-		  backface-visibility: hidden;
-		}
-
-		.popup {
-		  transition: .5s ease;
-		  opacity: 0;
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  transform: translate(-50%, -50%);
-		  -ms-transform: translate(-50%, -50%)
+		a {
+			color: black;
 		}
 		
-		.text {
-		  background-color: black;
-		  color: white;
-		  font-size: 16px;
-		  padding: 16px 32px;
+		a:hover {
+			color:black
 		}
-
-		.col-md-2:hover .image {
-		  opacity: 0.3;
-		}
-
-		.col-md-2:hover .popup {
-		  opacity: 1;
-		}
+		
 	</style>
   </head>
   
@@ -88,96 +67,232 @@
 		<header>
 			<div class="header"><div class="header-text">
 				<p><span style="font-size:50px;font-weight:bold">OUR PEOPLE</span>
-				<br><span style="font-size:30px">GET TO KNOW THE LEADERS OF ANALYTICS</span></p>
+				<br><span style="font-size:30px">GET TO KNOW THE MEMBERS OF ANALYTICS</span></p>
 			</div></div>
 		</header>
 		
-		<div class="row"><h1 style="text-align:center">2017 - 2018 Exec Board</h1><br></div>
-		
+		<div class="row"><h1 style="text-align:center">Executive Members</h1><br></div>
+				
 		<div class="row" style="margin-bottom: 10px">
 			<div class="col-md-2 col-md-offset-2">
-				<img class="image" src="http://via.placeholder.com/350x350" />
-				<div class="popup">
-					<div class="text"><a>Linkedin</a> or description</div>
-				</div>
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
 			</div>
 			<div class="col-md-2">
-				<img class="image" src="http://via.placeholder.com/350x350" />
-				<div class="popup">
-					<div class="text"><a>Linkedin</a> or description</div>
-				</div>
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
 			</div>
 			<div class="col-md-2">
-				<img class="image" src="http://via.placeholder.com/350x350" />
-				<div class="popup">
-					<div class="text"><a>Linkedin</a> or description</div>
-				</div>
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
 			</div>
 			<div class="col-md-2">
-				<img class="image" src="http://via.placeholder.com/350x350" />
-				<div class="popup">
-					<div class="text"><a>Linkedin</a> or description</div>
-				</div>
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
 			</div>
 		</div>
 		
 		<div class="row" style="margin-bottom: 50px">
 			<div class="col-md-2 col-md-offset-2">
-				<p><b>Name</b><br>Position</p>
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about1">About Me</span>
+				<div id="about1" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
 			</div>
 			<div class="col-md-2">
-				<p><b>Name</b><br>Position</p>
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about2">About Me</span>
+				<div id="about2" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
 			</div>
 			<div class="col-md-2">
-				<p><b>Name</b><br>Position</p>
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about3">About Me</span>
+				<div id="about3" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
 			</div>
 			<div class="col-md-2">
-				<p><b>Name</b><br>Position</p>
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about4">About Me</span>
+				<div id="about4" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
 			</div>
 		</div>
 		
+		<div class="row"><h1 style="text-align:center">Project Managers</h1><br></div>
+		
 		<div class="row" style="margin-bottom: 10px">
 			<div class="col-md-2 col-md-offset-2">
-				<img class="image" src="http://via.placeholder.com/350x350" />
-				<div class="popup">
-					<div class="text"><a>Linkedin</a> or description</div>
-				</div>
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
 			</div>
 			<div class="col-md-2">
-				<img class="image" src="http://via.placeholder.com/350x350" />
-				<div class="popup">
-					<div class="text"><a>Linkedin</a> or description</div>
-				</div>
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
 			</div>
 			<div class="col-md-2">
-				<img class="image" src="http://via.placeholder.com/350x350" />
-				<div class="popup">
-					<div class="text"><a>Linkedin</a> or description</div>
-				</div>
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
 			</div>
 			<div class="col-md-2">
-				<img class="image" src="http://via.placeholder.com/350x350" />
-				<div class="popup">
-					<div class="text"><a>Linkedin</a> or description</div>
-				</div>
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
 			</div>
 		</div>
 		
 		<div class="row" style="margin-bottom: 50px">
 			<div class="col-md-2 col-md-offset-2">
-				<p><b>Name</b><br>Position</p>
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about5">About Me</span>
+				<div id="about5" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
 			</div>
 			<div class="col-md-2">
-				<p><b>Name</b><br>Position</p>
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about6">About Me</span>
+				<div id="about6" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
 			</div>
 			<div class="col-md-2">
-				<p><b>Name</b><br>Position</p>
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about7">About Me</span>
+				<div id="about7" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
 			</div>
 			<div class="col-md-2">
-				<p><b>Name</b><br>Position</p>
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about8">About Me</span>
+				<div id="about8" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
 			</div>
 		</div>
-	
+		
+		<div class="row"><h1 style="text-align:center">Analysts</h1><br></div>
+		
+		<div class="row" style="margin-bottom: 10px">
+			<div class="col-md-2 col-md-offset-2">
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
+			</div>
+		</div>
+		
+		<div class="row" style="margin-bottom: 50px">
+			<div class="col-md-2 col-md-offset-2">
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about9">About Me</span>
+				<div id="about9" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
+			</div>
+			<div class="col-md-2">
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about10">About Me</span>
+				<div id="about10" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
+			</div>
+			<div class="col-md-2">
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about11">About Me</span>
+				<div id="about11" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
+			</div>
+			<div class="col-md-2">
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about12">About Me</span>
+				<div id="about12" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
+			</div>
+		</div>
+		
+		<div class="row" style="margin-bottom: 10px">
+			<div class="col-md-2 col-md-offset-2">
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" src="http://via.placeholder.com/350x350" />
+			</div>
+		</div>
+		
+			<div class="row" style="margin-bottom: 50px">
+			<div class="col-md-2 col-md-offset-2">
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about13">About Me</span>
+				<div id="about13" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
+			</div>
+			<div class="col-md-2">
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about14">About Me</span>
+				<div id="about14" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
+			</div>
+			<div class="col-md-2">
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about15">About Me</span>
+				<div id="about15" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
+			</div>
+			<div class="col-md-2">
+				<p><a href="https://www.linkedin.com/"><b>Name</b></a><br>Position<br>
+				<span data-toggle="collapse" data-target="#about16">About Me</span>
+				<div id="about16" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div></p>
+			</div>
+		</div>
+		
 	</div>
 </body>
 </html>
