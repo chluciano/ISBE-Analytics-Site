@@ -1,0 +1,257 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:300|Quattrocento+Sans');
+  header {
+    background: url("http://dash.ga.co/assets/jeff-bg.png") no-repeat center center fixed; opacity: 0.8;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center; 
+    color: white;
+    height: 100%;
+  }
+  a {
+    color: white;
+    background: transparent;
+      border: 0px;
+      outline: none;
+      cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: lighter;
+    transition-duration: 0.1s;
+    letter-spacing: 3px;  
+  }
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(193, 190, 185);
+    text-decoration: none;
+  }
+  a:active {
+    text-decoration: none;
+    color: rgb(193, 190, 185);
+  }
+  ul {
+    padding: 30px 0px 50px 0px;
+    }
+  li {
+    display: inline;
+    padding: 10px 0px 10px 0px;
+  }
+  h1 {
+    font-size: 80px;
+    padding: 10px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 9px;
+    text-align: center;
+    position: fixed; 
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 20px;
+    overflow: hidden;
+    border-right: .15em solid;
+    white-space: nowrap;
+    letter-spacing: .25em;
+    animation: 
+      typing 1s steps(9, end),
+      blink-caret .75s step-end infinite;
+    }
+
+  @keyframes typing {
+    from { width: 0}
+    to { width: 50% }
+  }
+
+
+/* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent }
+  }
+
+  .info {
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 150%;
+    font-weight: 315;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed; 
+    top: 38%;
+    left: 10%;
+    right: 10%; 
+    padding: 10px;
+    animation: fadeIn;
+    animation-duration: 3s;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    33% {opacity:0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+  }
+
+  .people {
+    font-size: 18px;
+    letter-spacing: 3px;
+    position: fixed;
+    bottom: 20%;
+    padding: 10px;
+  }
+  .people:link {
+    color: white;
+    text-decoration: none;
+  }
+  .people:visited {
+    color: white;
+    text-decoration: none;
+  }
+  .people:hover {
+    color: rgb(193, 190, 185);
+    text-decoration: none;
+  }
+  .apply {
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-align: center;
+    position: fixed; 
+    bottom: 20%;
+    padding: 10px;
+    margin-left: -30px;
+    padding-bottom: 18px;
+  }
+  .apply:link {
+    color: white;
+    text-decoration: none;
+  }
+  .apply:visited {
+    color: white;
+    text-decoration: none;
+  }
+  .apply:hover {
+    color: rgb(193, 190, 185);
+    text-decoration: none;
+  }
+  .work {
+    font-size: 18px;
+    letter-spacing: 3px;
+    position: fixed; 
+    bottom: 20%;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  .work:link {
+    color: white;
+    text-decoration: none;
+  }
+  .work:visited {
+    color: white;
+    text-decoration: none;
+  }
+  .work:hover {
+    color: rgb(193, 190, 185);
+    text-decoration: none;
+  }
+  .article {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  a.nuisbe {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .logo {
+    position: absolute;
+    top: 100%%;
+    left: 50%;
+  }
+  @media (max-width: 1100px) {
+    h1 {
+      font-size: 50px;
+    }
+    .info {
+      font-size: 16px;
+      line-height: 100%;
+      margin-bottom: 0px;
+    }
+    a.nuisbe {
+      font-size: 16px;
+    }
+    .people {
+      font-size: 14px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      position: fixed;
+      left: 25%;
+      top: 85%;
+      padding: 0px;
+    }
+    .work {
+      font-size: 14px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      position: fixed;
+      left: 50%;
+      top: 85%;
+      padding: 0px;
+    }
+    .apply {
+      font-size: 14px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      position: fixed;
+      left: 75%;
+      top: 85%;
+      padding-top: 5px;
+    }
+  }
+  @media (max-height: 500px) {
+    h1 {
+      font-size: 45px;
+    }
+    .info {
+      font-size: 12px;
+    }
+    a.nuisbe {
+      font-size: 12px;
+    }
+    .people {
+      font-size: 12px;
+      position: fixed;
+      bottom: 10%;
+    }
+    .apply {
+      font-size: 12px;
+      position: fixed;
+      bottom: 10%;
+    }
+    .work {
+      font-size: 12px;
+      position: fixed;
+      bottom: 10%;
+    }
+}
+</style>
